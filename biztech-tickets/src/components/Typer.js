@@ -19,28 +19,28 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 const codeSnippets = [
   // Java Snippets
-  `System.out.println("Welcome to ProductX!");`,
-  //`public class BizTech {\n    public static void main(String[] args) {\n    System.out.println("ProductX!");\n    }\n}`,
+  `System.out.println("Welcome to UXOpen!");`,
+  //`public class BizTech {\n    public static void main(String[] args) {\n    System.out.println("UXOpen!");\n    }\n}`,
   `int[] scores = new int[]{88, 73, 90, 100};`,
   `for (int i = 0; i < 4; i++) {\n    System.out.println("Scoring: " + scores[i]);\n}`,
-  `String hackathon = "ProductX";\nSystem.out.println(hackathon.toUpperCase());`,
+  `String hackathon = "UXOpen";\nSystem.out.println(hackathon.toUpperCase());`,
 
   // Python Snippets
-  `print("Hello, ProductX!")`,
+  `print("Hello, UXOpen!")`,
   `participants = ["Jay", "Kamryn", "Benny"]\nfor p in participants:\n    print(p)`,
   `def calculate_bonus(score):\n    return score * 0.1 if score > 90 else 0`,
-  `hackathon = {"name": "ProductX", "year": 2024}\nprint(hackathon["name"])`,
-  `import random\nprint(random.choice(["BizTech", "UBC", "ProductX"]))`,
+  `hackathon = {"name": "UXOpen", "year": 2024}\nprint(hackathon["name"])`,
+  `import random\nprint(random.choice(["BizTech", "UBC", "UXOpen"]))`,
 
   // C Snippets
   `printf("Hackathon season is here!\\n");`,
-  `for(int i = 0; i < 3; i++) {\n    printf("%d days to ProductX!\\n", 3-i);\n}`,
-  `char *event = "ProductX";\nprintf("Event: %s\\n", event);`,
+  `for(int i = 0; i < 3; i++) {\n    printf("%d days to UXOpen!\\n", 3-i);\n}`,
+  `char *event = "UXOpen";\nprintf("Event: %s\\n", event);`,
   `int sum(int a, int b) {\n    return a + b;\n}\nprintf("%d", sum(3, 5));`,
   `double pi = 3.14159;\nprintf("Pi: %.2f\\n", pi);`,
 
   // SQL Snippets
-  `SELECT * FROM Participants WHERE Hackathon='ProductX';`,
+  `SELECT * FROM Participants WHERE Hackathon='UXOpen';`,
   `INSERT INTO Winners (Name, Prize) VALUES ('BizTech Team', 1000);`,
   `UPDATE Scores SET Points = Points + 10 WHERE TeamName = 'Team 1';`,
   `DELETE FROM Sessions WHERE Topic = 'Intro to SQL';`,
@@ -64,8 +64,8 @@ const codeSnippets = [
   `class Participant {\n    String name;\n    public Participant(String name) {\n    this.name = name;\n    }\n}`,
   `List<String> projects = Arrays.asList("App", "Website", "AI Model");\nprojects.forEach(System.out::println);`,
   `int factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n-1);\n}`,
-  `String.join(", ", new String[]{"BizTech", "UBC", "ProductX"})`,
-  `Stream.of("BizTech", "UBC", "ProductX").forEach(System.out::println);`,
+  `String.join(", ", new String[]{"BizTech", "UBC", "UXOpen"})`,
+  `Stream.of("BizTech", "UBC", "UXOpen").forEach(System.out::println);`,
 
   // Challenging Snippets
   `SELECT TeamName, SUM(Points) AS TotalPoints FROM Scores GROUP BY TeamName;`,
@@ -76,7 +76,7 @@ const codeSnippets = [
   //`int hoursPassed = 0;\nwhile (hoursPassed < 24) {\n    printf("Hackathon in progress...\\n");\n    hoursPassed++;\n}`,
 
   // DrRacket
-  `(define (say-hello) (display "Hello ProductX!"))`,
+  `(define (say-hello) (display "Hello UXOpen!"))`,
   `(define (square x) (* x x))`,
   `(if (<= (current-inexact-milliseconds) 10000) 'early 'late)`,
 
@@ -87,15 +87,15 @@ const codeSnippets = [
 
   // Python
   `is_prime = lambda num: all(num%i != 0 for i in range(2, num))`,
-  `hackathon_name = "ProductX"`,
+  `hackathon_name = "UXOpen"`,
 
   // Assembly
   `mov eax, UBC`,
-  `mov ebx, ProductX`,
-  `add eax, ebx ; Add UBC to ProductX`,
+  `mov ebx, UXOpen`,
+  `add eax, ebx ; Add UBC to UXOpen`,
   `sub eax, 2024 ; Subtract the year`,
-  `cmp eax, ebx ; Compare UBC with ProductX`,
-  `msg db 'Welcome to ProductX!', 0xA ; Define string`,
+  `cmp eax, ebx ; Compare UBC with UXOpen`,
+  `msg db 'Welcome to UXOpen!', 0xA ; Define string`,
 
   `public static void joinTeam(String memberName) {\n    System.out.println(memberName + " has joined the team.");\n}`,
   `int calculateScore(int challengesCompleted) {\n    return challengesCompleted * 10;\n}`,
@@ -107,13 +107,13 @@ const codeSnippets = [
 
   `break;`,
 
-  `System.out.println("Hello, ProductX!");`,
+  `System.out.println("Hello, UXOpen!");`,
   `print('Welcome to Vancouver!')`,
   `echo "UBC BizTech";`,
   `if (hackathonStarted) {\n    System.out.println("Drink redbull");\n}`,
   `print("Where is the redbull")`,
   `cout << "UBC BizTech" << endl;`,
-  `document.getElementById("hackathon-name").textContent = "Welcome to UBC ProductX!";`,
+  `document.getElementById("hackathon-name").textContent = "Welcome to UBC UXOpen!";`,
   `participants.forEach(hacker => {\n    console.log(hacker.name + " is eating pizza");\n});`
 ];
 
